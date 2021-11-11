@@ -1,0 +1,321 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1280px)
+  .slick-prev
+    left: 0
+
+  .slick-next
+    right: 0
+
+  .home-slider-item__content
+    padding: 0 0 0 80px
+
+  footer
+    padding: 50px 0
+
+
+  .footer-box
+    width: 33.3%
+    margin: 0 0 44px
+    font-size: 15px
+    h3
+      font-size: 17px
+      margin: 0 0 19px
+
+@media only screen and (max-width: 1200px)
+  .home-slider-item__content
+    margin: 0 40px 0 0
+
+  .menu
+    justify-content: space-around
+
+    li
+      margin: 0
+
+  .logo
+    margin: 0 25px 0 0
+
+  .links-call
+    margin: 0 20px
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px)
+  .home-slider-item__content
+    padding: 0 0 0 50px
+    max-width: 370px
+
+  .home-slider-item
+    padding: 40px 0 47px
+
+  .product-gallery__item
+    height: 450px
+
+  .product-information
+    padding: 0
+    .price
+      margin: 30px 0 35px
+
+  .documents-box
+    padding: 35px 30px
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 850px)
+  .home-slider-item__img
+    margin: 29px 0 0
+
+  .home-slider-item__content
+    padding: 0
+    max-width: none
+    width: 100%
+
+  .slider-title
+    max-width: 330px
+    width: 100%
+    font-size: 26px
+    line-height: 1.38
+
+  .home-slider
+    padding: 0 20px
+
+  .home-slider .slick-arrow
+    top: 55%
+
+
+
+@media only screen and (max-width: 768px)
+  header
+    .header-links, .location-links, .links-call, .header-bottom
+      display: none
+
+  .logo-img__pc
+    display: none
+
+  .logo-img__mob
+    display: block
+
+  .logo
+    max-width: 54px
+    margin: 0
+
+  .header-top
+    padding: 20px 0
+
+  .phone
+    font-size: 19px
+
+  .btn-burger
+    display: flex
+
+  .header-top-row
+    align-items: center
+
+  h2
+    font-size: 28px
+    padding: 0 0 0 18px
+
+  .catalog
+    padding: 40px 0
+    h2
+      margin: 0 0 40px
+
+
+  .catalog-box
+    flex-direction: column
+    align-items: flex-start
+    padding: 28px 18px 18px
+    &__body
+      width: 100%
+      padding: 0
+    h3
+      font-size: 20px
+      margin: 0 0 24px
+      padding: 0
+      min-width: auto
+      width: 100%
+
+  .btn-all
+    width: 100%
+
+  .filter-wrapper
+    margin: 15px 0 20px
+
+  .total-filter
+    margin: 0 30px 0 0
+
+  .filter-select
+    margin: 0 20px 0 0
+
+  .product-card
+    padding: 18px 25px 20px
+    .box-text
+      font-size: 12px
+    &__body
+      padding: 13px 0 0
+    &__img
+      height: 139px
+    &__title
+      font-size: 14px
+
+  .list-rating
+    margin: 10px 0 16px
+    li
+      max-width: 18px
+
+
+  .price
+    font-size: 16px
+    margin: 16px auto 0
+
+  .btn-load
+    height: 46px
+    font-size: 16px
+
+  .footer-box
+    &:last-child, &:nth-last-child(2)
+      width: 50%
+
+  .page-navigation
+    padding: 29px 0
+    margin: 0 0 30px
+
+  .breadcrumb
+    margin: 0 0 22px
+    font-size: 15px
+
+  .recommended
+    margin: 0 0 37px
+
+  .product-information
+    .price
+      margin: 30px auto 35px
+      text-align: center
+
+  .product-gallery__item
+    max-width: 450px
+    margin: 0 auto
+    padding: 40px 30px
+
+  .btn-order
+    margin: 0 auto
+
+  .links-consultation
+    margin: 26px auto 0
+    text-align: center
+
+  .tabs-products
+    margin: 36px 0 0
+
+  .tab-content
+    padding: 30px 0 0
+    font-size: 15px
+    line-height: 1.67
+
+  .brands-block
+    margin: 42px 0 0
+    padding: 30px 28px
+    &__links
+      margin: 26px 0 0
+
+  .documents-links
+    margin: 0 0 19px
+
+  .documents-box
+    margin: 36px 0
+    padding: 35px 30px 11px
+
+  .characteristics
+    margin: 0 0 50px
+    h2
+      padding: 0 0 0 30px
+
+  .characteristics .list-characteristics li
+    padding: 15px 30px
+    font-size: 15px
+
+  .viewed
+    margin: 0 0 43px
+
+  .viewed-wrapper
+    padding: 35px 30px
+
+  .viewed-wrapper-slider
+    padding: 0 20px
+    .slick-arrow
+      padding: 0
+      width: 15px
+      height: 12px
+      border-radius: 0
+      background: transparent
+    .product-card
+      width: calc(100% - 8px)
+
+  .tabs-products
+    justify-content: space-between
+    .nav-item
+      flex: 1
+      margin: 0
+      padding: 0 7px
+      width: auto
+
+
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px)
+  .footer-box
+    width: auto
+    &:last-child, &:nth-last-child(2)
+      width: auto
+
+  .footer-row
+    justify-content: space-between
+
+  .product-preview
+    display: none
+
+  h1
+    font-size: 26px
+
+  h2
+    margin: 0 0 25px
+
+  .recommended
+    .product-col
+      display: none
+      &:nth-child(-n+2)
+        display: block
+
+  .breadcrumb-item + .breadcrumb-item:before
+    padding-left: 8px
+
+  .breadcrumb-item + .breadcrumb-item
+    padding-left: 8px
+
+  .product-gallery
+    margin: 0 0 30px
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 420px)
+  .tabs-products .nav-item
+    flex: 100%
+    margin: 0 0 10px
+    &:last-child
+      margin: 0
+
+@media only screen and (max-width: 360px)
+  .slider-title
+    font-size: 22px
+    line-height: normal
+
+  .product-card
+    padding: 15px 20px
+
+  .product-gallery__item
+    height: 350px
+
+  .tabs-products
+    font-size: 14px
