@@ -937,6 +937,49 @@ footer
     justify-content: flex-end
     width: 100%
 
+.reviews
+  margin: 0 0 70px
+
+.reviews-slider
+  margin: 30px 0 0
+  padding: 0 90px
+  .slick-prev
+    left: 0
+  .slick-next
+    right: 0
+  .slick-arrow
+    background: #f3f5fb
+    top: 50%
+    transform: translate(0,-50%)
+
+.reviews-box
+  max-width: 264px
+  width: 100%
+  margin: 0 auto
+  color: #111
+  font-size: 15px
+  line-height: 1.4
+  h4
+    font-style: italic
+  &__body
+    overflow: hidden
+    display: -moz-box
+    -moz-box-orient: vertical
+    -webkit-box-orient: vertical
+    display: -webkit-box
+    text-overflow: ellipsis
+    box-orient: vertical
+    line-clamp: 4
+    -webkit-line-clamp: 4
+
+.links-view
+  margin: 19px 0 0
+  width: 100%
+  color: #0243d0
+  &:hover
+    color: #111
+
+
 @media (max-width: 1100px)
   .attention-block
     &__icon
@@ -958,6 +1001,13 @@ footer
     margin: 0 0 10px
 
   .callback-section-wrapper .box-text
+    max-width: none
+
+  .reviews-slider
+    padding: 0 60px
+
+  .reviews-box
+    padding: 0 10px
     max-width: none
 
 @media (max-width: 768px)
@@ -982,7 +1032,15 @@ footer
       width: 100%
 
   .callback-section-wrapper
-    padding: 30px
+    padding: 30px 20px
+
+  .reviews-slider
+    padding: 0 40px
+    .slick-arrow
+      width: 30px
+      height: 30px
+      padding: 4px
+
 /*==========  news style end  ==========*/
 @import "media"
 // Всегда в конце

@@ -61,6 +61,27 @@ $('.viewed-wrapper-slider').slick({
     ]
 });
 
+$('.reviews-slider').slick({
+    slidesToShow: 3,
+    arrows: true,
+    prevArrow: '<button type="button" class="slick-prev"><img src="img/arrow-left.png" alt=""></button>',
+    nextArrow: '<button type="button" class="slick-next"><img src="img/arrow-right.png" alt=""></button>',
+    responsive: [
+        {
+            breakpoint: 900,
+            settings: {
+                slidesToShow: 2
+            }
+        },
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 1
+            }
+        }
+    ]
+});
+
 
 $('.btn-load').on('click', function (e) {
    e.preventDefault();
