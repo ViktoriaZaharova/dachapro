@@ -107,3 +107,13 @@ $('.go_to').click(function (e) {
     }
     return false;
 });
+
+
+$('.form-quiz .label-radio').on('click', function () {
+   $(this).parents('.form-quiz-step:not(:last-child)').fadeOut().next('.form-quiz-step').fadeIn();
+});
+
+$('.links-prev-step').on('click', function (e) {
+    e.preventDefault();
+    $(this).parents('.form-quiz-step').fadeOut().prev('.form-quiz-step').fadeIn();
+});

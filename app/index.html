@@ -52,7 +52,8 @@
 
           <a href="tel:+74951287548" class="phone">+7 (495) 128 75 48</a>
 
-          <a href="#" class="links-accent links-call">Заказать звонок</a>
+          <a href="#" class="links-accent links-call" data-toggle="modal" data-target="#callbackModal">Заказать
+            звонок</a>
 
           <a href="#" class="header-links links-accent">
             <span class="header-links__icon"><img src="img/compare.png" alt=""></span><span
@@ -175,7 +176,7 @@
             <div class="box-text"><p>Если вам нужна помощь в быстром выборе септика для вашего участка – воспользуйтесь
               формой быстрого подбора и расчета нужного оборудования по всем параметрам</p></div>
           </div>
-          <a href="#" class="btn btn-accent">Рассчитать</a>
+          <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#quizModal">Рассчитать</a>
         </div>
       </div>
 
@@ -948,7 +949,8 @@
                   <div class="reviews-box">
                     <h4>Андрей</h4>
                     <div class="reviews-box__body">
-                      <p>Еще эти агрегаты классифицируются по особенностям конструкции. Они изготавливаются для выполнения разных функций: септики.</p>
+                      <p>Еще эти агрегаты классифицируются по особенностям конструкции. Они изготавливаются для
+                        выполнения разных функций: септики.</p>
                     </div>
 
                     <a href="#" class="links-view">Читать польностью ></a>
@@ -1044,6 +1046,206 @@
     </div>
   </div>
 </footer>
+
+<!-- Модальное окно -->
+<div class="modal fade" id="callbackModal" tabindex="-1" aria-labelledby="callbackModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Заказать звонок</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <img src="img/close.png" alt="">
+        </button>
+      </div>
+      <div class="modal-body">
+        <form method="post" class="form-callback">
+          <label>
+            <input type="text" placeholder="Ваше имя" name="name">
+          </label>
+          <label>
+            <input type="text" placeholder="Номер телефона" name="phone">
+          </label>
+          <label>
+            <textarea name="message" placeholder="Сообщение"></textarea>
+          </label>
+          <button type="submit" class="btn btn-accent">Отправить</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="quizModal" tabindex="-1" aria-labelledby="quizModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Подбор Оборудования</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <img src="img/close.png" alt="">
+        </button>
+      </div>
+      <div class="modal-body">
+        <form method="post" class="form-quiz">
+          <div class="form-quiz-step form-quiz-step1">
+            <h3>Количество людей?</h3>
+
+            <div class="list-radio">
+              <label class="label-radio">
+                <input type="radio" class="inp-radio" name="radio" checked>
+                <span class="radio-custom"></span>
+                <span class="radio-text">
+                    1-2 <br>человека
+                  </span>
+              </label>
+              <label class="label-radio">
+                <input type="radio" class="inp-radio" name="radio">
+                <span class="radio-custom"></span>
+                <span class="radio-text">
+                    2-5 <br>человек
+                  </span>
+              </label>
+              <label class="label-radio">
+                <input type="radio" class="inp-radio" name="radio">
+                <span class="radio-custom"></span>
+                <span class="radio-text">
+                    5-7 <br>человек
+                  </span>
+              </label>
+              <label class="label-radio">
+                <input type="radio" class="inp-radio" name="radio">
+                <span class="radio-custom"></span>
+                <span class="radio-text">
+                    7 и более <br>человек
+                  </span>
+              </label>
+            </div>
+          </div>
+          <div class="form-quiz-step form-quiz-step2">
+            <h3>Какой на участке грунт?</h3>
+
+            <div class="list-radio">
+              <label class="label-radio">
+                <input type="radio" class="inp-radio" checked name="radio2">
+                <span class="radio-custom"></span>
+                <span class="radio-text">
+                   Песок
+                  </span>
+              </label>
+              <label class="label-radio">
+                <input type="radio" class="inp-radio" name="radio2">
+                <span class="radio-custom"></span>
+                <span class="radio-text">
+                    Глина
+                  </span>
+              </label>
+              <label class="label-radio">
+                <input type="radio" class="inp-radio" name="radio2">
+                <span class="radio-custom"></span>
+                <span class="radio-text">
+                    Плывун
+                  </span>
+              </label>
+              <label class="label-radio">
+                <input type="radio" class="inp-radio" name="radio2">
+                <span class="radio-custom"></span>
+                <span class="radio-text">
+                    Не знаю
+                  </span>
+              </label>
+            </div>
+            
+            <div class="form-bottom">
+              <a href="#" class="links links-prev-step">
+                <span class="links-icon"><img src="img/arrow-left.png" alt=""></span>
+                <span class="links-text">Назад</span>
+              </a>
+            </div>
+          </div>
+          <div class="form-quiz-step form-quiz-step3">
+            <h3>Уровень грунтовых вод?</h3>
+
+            <div class="list-radio">
+              <label class="label-radio">
+                <input type="radio" class="inp-radio" checked name="radio3">
+                <span class="radio-custom"></span>
+                <span class="radio-text">
+                    Грунтовые <br>
+воды глубоко
+                  </span>
+              </label>
+              <label class="label-radio">
+                <input type="radio" class="inp-radio" name="radio3">
+                <span class="radio-custom"></span>
+                <span class="radio-text">
+                    Грунтовые <br>
+воды близко
+                  </span>
+              </label>
+              <label class="label-radio">
+                <input type="radio" class="inp-radio" name="radio3">
+                <span class="radio-custom"></span>
+                <span class="radio-text">
+                    Не знаю
+                  </span>
+              </label>
+            </div>
+
+            <div class="form-bottom">
+              <a href="#" class="links links-prev-step">
+                <span class="links-icon"><img src="img/arrow-left.png" alt=""></span>
+                <span class="links-text">Назад</span>
+              </a>
+            </div>
+          </div>
+          <div class="form-quiz-step form-quiz-step4">
+            <h3>Куда отправить смету и зафиксировать скидку?</h3>
+
+            <div class="list-radio">
+                <label class="label-radio">
+                  <input type="radio" class="inp-radio" name="radio4">
+                  <span class="radio-icon"><img src="img/icon-modal1.png" alt=""></span>
+                  <span class="radio-text">
+                    Whatsapp
+                  </span>
+                </label>
+                <label class="label-radio">
+                  <input type="radio" class="inp-radio" name="radio4">
+                  <span class="radio-icon"><img src="img/icon-modal2.png" alt=""></span>
+                  <span class="radio-text">
+                    Telegram
+                  </span>
+                </label>
+                <label class="label-radio">
+                  <input type="radio" class="inp-radio" checked name="radio4">
+                  <span class="radio-icon"><img src="img/icon-modal3.png" alt=""></span>
+                  <span class="radio-text">
+                    Смс
+                  </span>
+                </label>
+                <label class="label-radio">
+                  <input type="radio" class="inp-radio" name="radio4">
+                  <span class="radio-icon"><img src="img/icon-modal4.png" alt=""></span>
+                  <span class="radio-text">
+                    Телефон
+                  </span>
+                </label>
+            </div>
+
+            <div class="form-group">
+              <label>
+                <input type="text" placeholder="Номер телефона" name="phone">
+              </label>
+              <button type="submit" class="btn btn-accent">Получить смету и скидку</button>
+            </div>
+
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
 
 <script src="js/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
